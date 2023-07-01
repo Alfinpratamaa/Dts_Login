@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_primary"
+    app:layoutDescription="@xml/activity_login_scene"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="390dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="455dp"
+        app:srcCompat="@drawable/login_awan_bawah" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-70dp"
+        app:srcCompat="@drawable/login_awas_atas" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="578dp"
+        android:src="@drawable/logo_fintch" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="345dp"
+        android:layout_height="380dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginLeft="24dp"
+        app:cardCornerRadius="50dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_primary"
+            android:alpha="0.8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:textSize="40sp" />
+            <View
+                android:layout_width="135dp"
+                android:layout_height="3dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="100dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_user" />
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    android:layout_width="175dp"
+                    android:layout_height="40dp"
+                    android:hint="Enter username"
+                    android:inputType="text"
+                    android:textColor="@color/bg_secondary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.5"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_lock" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="175dp"
+                    android:layout_height="40dp"
+                    android:hint="Enter password"
+                    android:inputType="textPassword"
+                    android:textColor="@color/bg_secondary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:alpha="0.5"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/buttonRegisterHere"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Don't have an account? Register here"
+                android:textColor="@color/button_text_color_selector"
+                android:textSize="13sp"
+                android:background="@drawable/button_background_selector"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+
+
+            <ImageButton
+                android:id="@+id/loginToHome"
+                android:layout_width="65dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_selector"
+                app:srcCompat="@drawable/icon_login" />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

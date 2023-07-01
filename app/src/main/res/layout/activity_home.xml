@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.HomeActivity" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="-50dp"
+        android:layout_height="230dp"
+        app:cardBackgroundColor="@color/bg_primary"
+        app:cardCornerRadius="60dp"
+        >
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#FF0000"
+            android:fontFamily="sans-serif-medium"
+            android:text="logout"
+            android:textSize="20sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:paddingHorizontal="4dp"
+            android:paddingVertical="4dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="40dp"
+            android:layout_marginStart="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="4dp"
+
+                app:srcCompat="@drawable/icon_user" />
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/imageCari"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/icon_search" />
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="710dp"
+        android:background="@color/bg_primary"
+
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="660dp"
+
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="4dp"
+        app:cardBackgroundColor="@color/bg_secondary"
+        app:cardCornerRadius="40dp"
+        android:layout_marginStart="150dp"
+        >
+        <ImageView
+            android:id="@+id/imageTambahData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/icon_tambah" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="705dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/icon_home" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="718dp"
+        android:layout_marginStart="300dp"
+        app:srcCompat="@drawable/icon_calendar" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
